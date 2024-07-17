@@ -9,7 +9,7 @@ function Header({ favoriteCount }) {
       <Container>
         <Navbar.Brand href="#home">
           <div className='d-flex '>
-            <img src="src/assets/images/2829ed896dfada68928eff9b4005e31f.png" alt="logo" style={{ width: '100px', height: '100px' }} />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0B70tLxHE7ny5mELw_DGXf0BOO9DaLQvlEcSdHT9oWmNiWG0X" alt="logo" style={{ width: '100px', height: '100px' }} />
             <h5 className='fs-1 ms-3 mt-3'>Recipo</h5>
           </div>
         </Navbar.Brand>

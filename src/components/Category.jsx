@@ -84,7 +84,6 @@ function Category(isLoggedIn, handleLogout) {
         <div className="col-md-1"></div>
         <div className="col-md-10">
           <div className='text-center mt-5 w-100 mb-5'>
-          <Link to={'/mainhome'} style={{textDecoration:"none"}}><h5>Back to recipe</h5></Link>
             <Button variant='info rounded border-danger ms-3 w-25' onClick={handleShow}>
             
               <h5>Add New Category</h5> 

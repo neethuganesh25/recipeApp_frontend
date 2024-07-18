@@ -9,7 +9,7 @@ import { addRecipeApi } from '../../services/allApi';
 
 function Add({ setAddStatus }) {
   const [recipe, setRecipe] = useState({
-    Name: "", // Changed from Email to Name
+    Name: "", 
     RecipeName: "",
     Description: "",
     Ingredients: "",
@@ -23,7 +23,7 @@ function Add({ setAddStatus }) {
   const handleClose = () => {
     setShow(false);
     setRecipe({
-      Name: "", // Resetting Name
+      Name: "", 
       RecipeName: "",
       Description: "",
       Ingredients: "",
@@ -62,7 +62,7 @@ function Add({ setAddStatus }) {
       const result = await addRecipeApi(recipe);
       if (result.status >= 200 && result.status < 300) {
         toast.success("Successfully Uploaded");
-        setAddStatus(result.data); // Pass the new recipe to the parent component
+        setAddStatus(result.data); 
         handleClose();
       } else {
         toast.error("Something went wrong");

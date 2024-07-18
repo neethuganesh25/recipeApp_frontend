@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
-import { updateRecipeApi } from '../../services/allApi'; // Import your API function
+import { updateRecipeApi } from '../../services/allApi'; 
 
 function EditRecipe({ recipe, onClose, onSave }) {
   const [formData, setFormData] = useState({
@@ -26,8 +26,8 @@ function EditRecipe({ recipe, onClose, onSave }) {
     e.preventDefault();
     const result = await updateRecipeApi(formData.id, formData);
     if (result.status >= 200 && result.status < 300) {
-      onSave(formData); // Update the state in MainHome
-      onClose(); // Close the modal
+      onSave(formData); 
+      onClose(); 
     } else {
       console.error('Failed to update recipe', result);
     }

@@ -3,7 +3,7 @@ import { Button, Card, Container, Form } from 'react-bootstrap';
 import { addFeedbackApi } from '../../services/allApi';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './Feedback.css'; // Ensure to import your CSS
+import './Feedback.css'; 
 
 function FeedUpload({ setAddStatus }) {
     const [video, setVideo] = useState({

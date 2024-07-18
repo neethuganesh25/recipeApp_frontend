@@ -17,7 +17,7 @@ function Login({ handleLogin }) {
 
     if (storedUser && storedUser.username === username && storedUser.password === password) {
       toast.success('Login successful!');
-      handleLogin(); // Call handleLogin to update login state
+      handleLogin(); 
       navigate('/mainhome');
     } else {
       setError('Invalid username or password');

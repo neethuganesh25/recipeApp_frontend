@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import RecipeIndex from "./RecipeIndex";
 import MealItem from '../components/Mealitem';
-//import './Meal.css'; // Import CSS for styling
+
 
 const Meal = () => {
     const [search, setSearch] = useState("");

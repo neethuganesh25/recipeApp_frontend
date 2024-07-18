@@ -9,8 +9,9 @@ import Modal from 'react-bootstrap/Modal';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { addCategoryApi, allCategoryApi, deleteCategoryApi, getRecipeApi } from '../../services/allApi';
+import { Link } from 'react-router-dom';
 
-function Category() {
+function Category(isLoggedIn, handleLogout) {
   const [show, setShow] = useState(false);
   const [categoryName, setCategoryName] = useState('');
   const [allCategory, setAllCategory] = useState([]);
@@ -77,12 +78,15 @@ function Category() {
 
   return (
     <>
-      <Header />
+      <Header isLoggedIn={isLoggedIn} handleLogout={handleLogout} />
+
       <div className="row">
         <div className="col-md-1"></div>
         <div className="col-md-10">
           <div className='text-center mt-5 w-100 mb-5'>
+          <Link to={'/mainhome'} style={{textDecoration:"none"}}><h5>Back to recipe</h5></Link>
             <Button variant='info rounded border-danger ms-3 w-25' onClick={handleShow}>
+            
               <h5>Add New Category</h5> 
               <FontAwesomeIcon icon={faSquarePlus} shake size="lg" className='ms-4' /> 
             </Button>

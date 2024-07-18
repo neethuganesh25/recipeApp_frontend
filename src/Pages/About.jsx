@@ -10,7 +10,7 @@ function About() {
   return (
 
     <>
-      <Header />
+    <Header />
       <div className="row">
         <div className="col-md-1"></div>
         <div className="col-md-4">

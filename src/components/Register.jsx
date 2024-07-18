@@ -61,7 +61,7 @@ function Register() {
             // Simulate sending username and password to the user's email
             toast.info(`Your username is: ${username} and your password is: ${password}`);
 
-            navigate('/');
+            navigate('/login');
             setIsLoading(false);
         }, 1000);
     };

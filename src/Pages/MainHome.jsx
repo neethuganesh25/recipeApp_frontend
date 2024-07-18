@@ -5,8 +5,9 @@ import Header from '../components/Header';
 import Add from '../components/Add';
 import EditRecipe from '../components/EditRecipe'; 
 import { getRecipeApi } from '../../services/allApi';
+import './MainHome.css';  // Custom CSS for additional styling
 
-function MainHome() {
+function MainHome(isLoggedIn,handleLogout) {
   const [recipes, setRecipes] = useState([]);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [currentRecipe, setCurrentRecipe] = useState(null);
@@ -49,23 +50,24 @@ function MainHome() {
   }, []);
 
   return (
+    
     <div>
-      <Header />
+      <Header isLoggedIn={isLoggedIn} handleLogout={handleLogout} />
       <Routes>
         <Route path="/" element={
           <div>
-            <div className='d-flex m-5'>
+            <div className='d-flex flex-wrap m-5 justify-content-between align-items-center'>
               <Add setAddStatus={addNewRecipe} />
-              <h5 className='text-end ms-auto' style={{ marginRight: '100px' }}>
-                <Link to={'/category'} style={{ textDecoration: 'none', color: 'black' }}>
+              <h5 className='text-end ms-auto'>
+                <Link to={'/category'} className='view-categories-link'>
                   View all Categories
                 </Link>
               </h5>
             </div>
-            <div className='mx-5'>
+            <div className='container mx-5'>
               <div className="row">
                 {recipes.map((recipe) => (
-                  <div className="col-md-3 " key={recipe.id}>
+                  <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" key={recipe.id}>
                     <RecipeCard 
                       displayRecipe={recipe} 
                       setDeleteRecipeStatus={setDeleteRecipeStatus} 

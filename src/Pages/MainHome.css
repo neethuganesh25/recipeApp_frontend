@@ -1,0 +1,35 @@
+/* MainHome.css */
+.view-categories-link {
+    text-decoration: none;
+    color: black;
+    margin-right: 100px;
+  }
+  
+  @media (max-width: 768px) {
+    .view-categories-link {
+      margin-right: 0;
+      text-align: center;
+      display: block;
+      margin-top: 20px;
+    }
+  
+    .m-5 {
+      margin: 1rem !important;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .d-flex {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .m-5 {
+      margin: 0.5rem !important;
+    }
+  
+    .container {
+      padding: 0;
+    }
+  }
+  

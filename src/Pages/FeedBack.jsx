@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 
-function FeedBack() {
+function FeedBack(isLoggedIn,handleLogout) {
   const [addStatus, setAddStatus] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -23,7 +23,7 @@ function FeedBack() {
 
   return (
     <>
-      <Header />
+      <Header isLoggedIn={isLoggedIn} handleLogout={handleLogout} />
       <div className="feedback-container">
         <FeedUpload setAddStatus={handleAddStatus} />
         {loading && <p>Loading...</p>}

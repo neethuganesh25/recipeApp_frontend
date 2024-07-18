@@ -18,12 +18,12 @@ function RecipeCard({ displayRecipe, setDeleteRecipeStatus, openEditModal }) {
 
   return (
     <>
-      <Card style={{ width: '90%', height: '60vh' }} className='my-5'>
+      <Card className='my-5 mx-auto' style={{ width: '90%', maxWidth: '600px' }}>
         <Card.Img
           variant="top"
           onClick={() => setLgShow(true)}
           src={displayRecipe?.RecipeImg}
-          style={{ width: '100%', height: '90vh' }}
+          style={{ width: '100%', height: 'auto' }}
         />
         <Card.Body>
           <Card.Title>{displayRecipe?.RecipeName}</Card.Title>
@@ -61,7 +61,7 @@ function RecipeCard({ displayRecipe, setDeleteRecipeStatus, openEditModal }) {
         <Modal.Body>
           <div className="row">
             <div className="col-md-6">
-              <img src={displayRecipe?.RecipeImg} height={'300px'} width={'100%'} />
+              <img src={displayRecipe?.RecipeImg} height={'300px'} width={'100%'} alt="Recipe" />
             </div>
             <div className="col-md-6">
               <h4>Cooking Instructions:</h4>
@@ -74,12 +74,13 @@ function RecipeCard({ displayRecipe, setDeleteRecipeStatus, openEditModal }) {
               <h4>Ingredients:</h4>
               <p>{displayRecipe?.Ingredients}</p>
               <iframe
-                width="760"
-                height="487"
+                width="100%"
+                height="315"
                 src={displayRecipe?.url}
                 frameBorder="0"
                 allow="autoplay; encrypted-media"
                 allowFullScreen
+                title="Recipe Video"
               ></iframe>
             </div>
           </div>

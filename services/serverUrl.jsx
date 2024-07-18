@@ -1,1 +1,1 @@
-export const serverUrl='https://recipe-app-backend-cyjd.onrender.com'
+export const serverUrl='https://localhost/3000'

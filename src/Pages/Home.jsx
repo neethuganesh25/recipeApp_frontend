@@ -74,8 +74,11 @@ function Home() {
 
         <div className="row w-100" style={{ marginTop: '2%' }}>
           <h3 style={{ marginLeft: '8%' }}>Latest Recipes</h3>
-          <div className="col-md-2"></div>
+          <div className="col-md-1"></div>
           <div className="col-md-10 d-flex flex-wrap">
+          <div className="col-md-1"></div>
+
+
             <Card className='mt-4 shadow card-fixed-size'>
               <Card.Img variant="top" src="https://www.eatingthaifood.com/wp-content/uploads/2017/05/thai-cashew-chicken-recipe-1024x683.jpg" className="card-img-fixed" />
               <Card.Body>
@@ -92,7 +95,7 @@ function Home() {
                   <WhatsappIcon size={25} round />
                 </WhatsappShareButton>
               </div>*/}
-            </Card>
+            </Card> 
 
             <Card className='mt-4 shadow ms-4 card-fixed-size'>
               <Card.Img variant="top" src="https://i.ytimg.com/vi/FxLcVJdNt5o/maxresdefault.jpg" className="card-img-fixed" />
@@ -129,8 +132,6 @@ function Home() {
                 </WhatsappShareButton>
               </div>*/}
             </Card>
-
-           
           </div>
           <div className="col-md-1"></div>
         </div>

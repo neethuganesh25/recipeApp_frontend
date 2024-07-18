@@ -38,15 +38,47 @@
 }
 
 .feedback-form button {
-  background-color: #6ab967; /* Primary button color */
-  color: #fff; /* White text */
-  border: none; /* No border */
+  background-color: #6ab967; 
+  color: #fff; 
+  border: none;
   border-radius: 5px;
   padding: 10px 15px;
-  cursor: pointer; /* Pointer on hover */
-  transition: background-color 0.3s; /* Smooth transition */
+  cursor: pointer;
+  transition: background-color 0.3s; 
 }
 
 .feedback-form button:hover {
-  background-color: #25d425; /* Darker shade on hover */
+  background-color: #25d425; 
+}
+@media (max-width: 575.98px) {
+  .feedback-form {
+    padding: 15px;
+  }
+
+  .feedback-upload-container {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 337px) {
+  .feedback-upload-container {
+    padding: 0 10px;
+  }
+
+.feedback-form {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.form-control {
+  font-size: 14px;
+}
+
+.form-control::placeholder {
+  font-size: 14px;
+}
+
+.d-flex.justify-content-between .btn {
+  width: 48%;
+}
 }

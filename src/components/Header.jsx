@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Header({ isLoggedIn, handleLogout }) {
   return (
-    <Navbar expand="lg" className="bg-body-transparent border-bottom">
+    <Navbar expand="lg" className=" border-bottom">
       <Container>
         <Navbar.Brand as={Link} to="/">
           <div className='d-flex '>

@@ -1,18 +1,5 @@
-.footer .form-control {
-    margin-bottom: 10px;
+
+  
+  .foot{
+    background-color: #f4edee;
   }
-  
-  .footer .btn {
-    width: 100%;
-  }
-  
-  @media (min-width: 768px) {
-    .footer .form-control {
-      margin-bottom: 0;
-    }
-  
-    .footer .btn {
-      width: auto;
-    }
-  }
-  

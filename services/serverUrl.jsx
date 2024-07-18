@@ -1,1 +1,1 @@
-export const serverUrl='https://localhost/3000'
+export const serverUrl='https://recipe-app-backend-fbbw.onrender.com'

@@ -15,4 +15,24 @@
     height: 100%;
     border: 0;
   }
-  
+  /* About.css */
+.ratings {
+  display: flex;
+  justify-content: center;
+}
+
+.star-container {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  margin-right: 5px; /* Adjust spacing between stars */
+}
+
+@media (max-width: 576px) {
+  .star-container {
+    flex-wrap: nowrap; /* Prevent wrapping on smaller screens */
+    justify-content: center; /* Center the stars */
+  }
+}

@@ -14,9 +14,15 @@ function Login({ handleLogin }) {
     e.preventDefault();
     setError('');
 
-    const storedUser = JSON.parse(localStorage.getItem('userDetails'));
+   
+    const storedUsers = JSON.parse(localStorage.getItem('users')) || [];
 
-    if (storedUser && storedUser.username === username && storedUser.password === password) {
+    
+    const user = storedUsers.find(
+      (user) => user.username === username && user.password === password
+    );
+
+    if (user) {
       toast.success('Login successful!');
       handleLogin();
       navigate('/mainhome');
@@ -31,9 +37,12 @@ function Login({ handleLogin }) {
       <div className="login-container container-fluid">
         <div className="row vh-100">
           <div className="col-md-6 mt-2 d-flex align-items-center justify-content-center">
-            <img src="https://i.postimg.cc/vH4G2pV8/istockphoto-1440927302-612x612.jpg" alt="img"
-              className="img-fluid border-5" 
-              width={'100%'} />
+            <img
+              src="https://i.postimg.cc/vH4G2pV8/istockphoto-1440927302-612x612.jpg"
+              alt="img"
+              className="img-fluid border-5"
+              width={'100%'}
+            />
           </div>
           <div className="col-md-6 d-flex align-items-center justify-content-center">
             <div className="form-box login p-4">

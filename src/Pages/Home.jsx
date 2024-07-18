@@ -27,9 +27,9 @@ function Home() {
           <div className="col-1"></div>
           <div className="col-md-5 col-sm-10 mt-5">
             <h1 className='mt-5 fs-1 fw-bold'>Huge Selection of Delicious Recipes</h1>
-            <p className='mt-5'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, similique quidem adipisci repudiandae libero necessitatibus sunt perspiciatis modi. Esse blanditiis incidunt repellendus sequi illo deserunt iure quisquam vitae explicabo aliquid!</p>
+            <p className='mt-5 p-2' style={{textAlign:'justify'}}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, similique quidem adipisci repudiandae libero necessitatibus sunt perspiciatis modi. Esse blanditiis incidunt repellendus sequi illo deserunt iure quisquam vitae explicabo aliquid!</p>
             <div className='d-flex mt-5'>
-              <Link to={'/recipes'}><Button variant="dark w-75">Explore Latest</Button></Link>
+              <Link to={'/recipes'}><Button variant="dark w-100">Explore Latest</Button></Link>
             </div>
           </div>
           <div className="col-md-5 col-sm-10 mt-5 d-flex justify-content-center">

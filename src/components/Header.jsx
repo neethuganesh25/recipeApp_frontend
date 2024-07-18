@@ -9,11 +9,8 @@ function Header({ isLoggedIn, handleLogout }) {
       <Container>
         <Navbar.Brand as={Link} to="/">
           <div className='d-flex '>
-        { /*   <img src="src/assets/ima
-            ges/2829ed896dfada68928eff9b4005e31f.png" alt=""
-             style={{ width: '100px', height: '100px' }} />*/}
-            <img src="https://i.postimg.cc/kXJ4dNp0/images-1-removebg-preview.png" alt=""
-              width={100} height={50} className='mt-3 ms-2' />
+        <h3 className='text-danger ms-5 mt-2' style={{fontFamily: "Lobster"}}>Recipo</h3>
+
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

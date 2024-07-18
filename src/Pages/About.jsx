@@ -18,8 +18,10 @@ function About() {
             height={300} alt="" />
         </div>
         <div className="col-md-5">
-          <h3 className='mt-5 text-danger  text-center'>Discover More About Us</h3>
-          <p className='text-dark ms-3 mt-3 ' style={{ textAlign: 'justify' }}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae molestiae, eos voluptate hic delectus, ratione, amet ullam omnis aliquid quae harum nobis reprehenderit asperiores quas voluptatem modi dolorum culpa sequi?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae molestiae, eos voluptate hic delectus, ratione, amet ullam omnis aliquid quae harum nobis reprehenderit asperiores quas voluptatem modi dolorum culpa sequi?</p>
+          <h3 className='mt-5 text-danger text-center'>Discover More About Us</h3>
+          <p className='text-dark ms-3 mt-3 ' style={{ textAlign: 'justify' }}>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae molestiae, eos voluptate hic delectus, ratione, amet ullam omnis aliquid quae harum nobis reprehenderit asperiores quas voluptatem modi dolorum culpa sequi?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae molestiae, eos voluptate hic delectus, ratione, amet ullam omnis aliquid quae harum nobis reprehenderit asperiores quas voluptatem modi dolorum culpa sequi?
+          </p>
           <button className='btn btn-dark mt-3 ms-3 w-25'>Lets Explore</button>
         </div>
         <div className="col-md-2"></div>
@@ -69,7 +71,7 @@ function About() {
       <div className="row">
         <div className="col-md-2"></div>
         <div className="col-md-8">
-          <div className="youtube-video  mt-5">
+          <div className="youtube-video mt-5">
             <iframe
               src="https://www.youtube.com/embed/8L7V1eTaTnw"
               title="CHICKEN TIKKA NO OVEN | CHICKEN TIKKA KEBAB ON TAWA | CHICKEN TIKKA RECIPE"
@@ -83,7 +85,7 @@ function About() {
       </div>
       <Footer />
     </>
-  )
+  );
 }
 
 export default About;

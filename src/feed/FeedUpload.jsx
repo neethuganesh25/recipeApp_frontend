@@ -73,8 +73,8 @@ function FeedUpload({ setAddStatus }) {
                             />
                         </Form.Group>
                         <div className="d-flex justify-content-between">
-                            <Button variant="primary" className='w-25 ' type="submit">Upload</Button>
-                            <Button variant="dark" className='w-25' type="button" onClick={handleClear}>Clear</Button>
+                            <Button variant="primary" className='w-75 ' type="submit">Upload</Button>
+                            <Button variant="dark" className='ms-1 w-75' type="button" onClick={handleClear}>Clear</Button>
                         </div>
                     </Form>
                 </Card.Body>

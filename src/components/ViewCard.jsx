@@ -24,7 +24,7 @@ function ViewCard({ recipes }) {
               <Card.Img variant="top" src={recipe.RecipeImg} />
               <Card.Body>
                 <Card.Title>{recipe.RecipeName}</Card.Title>
-                <p className="text-muted">By: {recipe.Name}</p> 
+               {/* <p className="text-muted">By: {recipe.Name}</p>*/ }
               </Card.Body>
             </Card>
           </div>
